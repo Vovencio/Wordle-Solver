@@ -11,7 +11,7 @@
       <p>
         This is my fast and efficient Wordle solver in Java. <br>
         It replaces my old Python <sub>(more like Slowthon, am I right?)</sub> solver, which was ok but way too sluggish. <sub>(is also available on this page)</sub><br>
-        Now, we're talking optimized data structures, precomputed values and instant results.
+        Now, we're talking optimized data structures, precomputed values and near instant results.
       </p>
     </td>
   </tr>
