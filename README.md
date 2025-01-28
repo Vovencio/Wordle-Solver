@@ -1,7 +1,7 @@
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
     <!-- Image Cell -->
-    <td">
+    <td>
       <img src="https://c.tenor.com/EYUlar2QIe4AAAAd/tenor.gif" 
            alt="Plink">
     </td>
