@@ -10,7 +10,7 @@
       <h1>Java Wordle Solver</h1>
       <p>
         This is my fast and efficient Wordle solver in Java. <br>
-        It replaces my old Python <small>(more like Slowthon, am I right?)</small> solver <small>(which is also available on this page)</small>, which was ok but way too sluggish. <br>
+        It replaces my old Python <sub>(more like Slowthon, am I right?)</sub> solver <sub>(is also available on this page)</sub>, which was ok but way too sluggish. <br>
         Now, we're talking optimized data structures, precomputed values and instant results.
       </p>
     </td>
