@@ -539,7 +539,6 @@ azyme
 baaed
 baals
 babas
-babas
 babes
 baboo
 babul
@@ -5438,6 +5437,7 @@ nieve
 niffs
 niffy
 nifty
+niger
 night
 nihil
 nikau
