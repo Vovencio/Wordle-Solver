@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Solver solver = new Solver("dictionary.txt");
+        Solver solver = new Solver("C:\\Users\\KnyylLapAss\\Documents\\GitHub\\Wordle-Solver\\src\\dictionary.txt");
 
-        System.out.println(solver.wordsLeft());
-        solver.limitWords(new int[] {0, 0, 0, 0, 0}, solver.findWord("hello"));
-        System.out.println(solver.wordsLeft());
+        solver.testFindWord();
+        
+        solver.testLimits("C:\\Users\\KnyylLapAss\\Documents\\GitHub\\Wordle-Solver\\python-solver\\test_data.json");
     }
 }

@@ -2,6 +2,7 @@ import os
 import random
 import math
 from collections import defaultdict
+import json
 
 folder_path = 'Words'
 
@@ -165,37 +166,32 @@ def main():
 	
 	first = ['sport', 'adieu']
 	words = dictionary[:]
-
+	'''
 	# Generate 100 random test cases
-	random_words = [random.choice(dictionary) for _ in range(100)]
-	random_answers = [[random.randint(0, 2) for _ in range(5)] for _ in range(100)]
+	random_words = [random.choice(dictionary) for _ in range(10000)]
+	random_answers = [[random.randint(0, 2) for _ in range(5)] for _ in range(10000)]
 
 	# Initialize an empty list to store expected lengths
 	expected_lengths = []
 
 	# Iterate over the generated words and answers to compute expected lengths
-	for i in range(100):
-	    answer = random_answers[i]
-	    word = random_words[i]
-	    expected_length = len(limitWords(answer, word, dictionary))  # Compute the expected length
-	    expected_lengths.append(expected_length)
+	for i in range(10000):
+		answer = random_answers[i]
+		word = random_words[i]
+		expected_length = len(limitWords(answer, word, dictionary))  # Compute the expected length
+		expected_lengths.append(expected_length)
 
-	# Print Java-style arrays
-	print("int[][] ansArrays = {")
-	for answer in random_answers:
-	    print("    {" + ",".join(map(str, answer)) + "},")
-	print("};\n")
-	
-	print("String[] words = {")
-	for word in random_words:
-	    print(f'    "{word}",')
-	print("};\n")
-	
-	print("int[] expectedLengths = {")
-	for length in expected_lengths:
-	    print(f"    {length},")
-	print("};")
+	# Create a dictionary to store the test data
+	test_data = {
+		"ansArrays": random_answers,
+		"words": random_words,
+		"expectedLengths": expected_lengths
+	}
 
+	# Save the data to a JSON file
+	with open("test_data.json", "w") as file:
+		json.dump(test_data, file, indent=4)
+	'''
 	print("Please enter the words sport and adieu.")
 	a = []
 	for i in first:
